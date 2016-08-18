@@ -1,0 +1,14 @@
+https://developer.apple.com/library/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW1
+
+Fill : 铺满
+Fill Equal ： 等宽铺满
+Fill Proportionally : 等比例铺满
+Equal Spacing ：等距离放置
+Equal Centering ：各个试图的中心距离保持一致，不够放置则压缩后面的试图距离；
+alignment(对齐) 属性决定了其管理的视图在垂直于其轴向上的布局；
+Fill : 垂直方向上铺满
+Top : 沿顶端对齐
+Center : 沿中心线对其
+Bottom : 沿底部对齐
+First Baseline : 按照第一个子视图的文字的第一行对齐，同时保证高度最大的子视图底部对齐（只在axis为水平方向有效）
+Last Baseline : 按照最后一个子视图的文字的最后一行对齐，同时保证高度最大的子视图顶部对齐（只在axis为水平方向有效）
