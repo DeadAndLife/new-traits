@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OZ2-1L-9m7">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="fxq-12-3VA">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="456"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="becky" translatesAutoresizingMaskIntoConstraints="NO" id="XdE-9S-20T">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="456"/>
+                                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ben" translatesAutoresizingMaskIntoConstraints="NO" id="PPn-fc-R1f">
+                                                <rect key="frame" x="151" y="0.0" width="147" height="456"/>
+                                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pete" translatesAutoresizingMaskIntoConstraints="NO" id="W7o-BW-rgG">
+                                                <rect key="frame" x="303" y="0.0" width="146" height="456"/>
+                                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ray" translatesAutoresizingMaskIntoConstraints="NO" id="1WW-Dr-mwM">
+                                                <rect key="frame" x="454" y="0.0" width="146" height="456"/>
+                                                <color key="backgroundColor" red="1" green="0.52182397390000002" blue="0.74521544470000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="456" id="pB6-tq-Als"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPr-T8-lOe">
+                                        <rect key="frame" x="0.0" y="466" width="600" height="54"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Distribution" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WsG-3I-1Pu">
+                                                <rect key="frame" x="0.0" y="0.0" width="51" height="54"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lK2-do-XPt">
+                                                <rect key="frame" x="51" y="0.0" width="549" height="55"/>
+                                                <segments>
+                                                    <segment title="Fill"/>
+                                                    <segment title="Fill equal"/>
+                                                    <segment title="equal pro"/>
+                                                    <segment title="equal spacing"/>
+                                                    <segment title="equal centering"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="distributionBtn:" destination="BYZ-38-t0r" eventType="valueChanged" id="gnm-04-bLE"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="Nv4-nx-6mg"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pcB-CZ-fuR">
+                                        <rect key="frame" x="0.0" y="530" width="600" height="50"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alignment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8q-1c-Kv4">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cpS-fW-drz">
+                                                <rect key="frame" x="78" y="0.0" width="522" height="51"/>
+                                                <segments>
+                                                    <segment title="Fill"/>
+                                                    <segment title="Top"/>
+                                                    <segment title="center"/>
+                                                    <segment title="bottom"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="alignmentBtn:" destination="BYZ-38-t0r" eventType="valueChanged" id="OAi-Sn-ZKw"/>
+                                                </connections>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="UMN-ds-mZY"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OZ2-1L-9m7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9Ir-cY-7Hm"/>
+                            <constraint firstItem="OZ2-1L-9m7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="m4P-cQ-aih"/>
+                            <constraint firstItem="OZ2-1L-9m7" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="qbd-sz-9QP"/>
+                            <constraint firstAttribute="trailing" secondItem="OZ2-1L-9m7" secondAttribute="trailing" id="tJG-86-x9f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="peopleStackView" destination="fxq-12-3VA" id="Y9G-Yj-SXN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="becky" width="151" height="178"/>
+        <image name="ben" width="132" height="143"/>
+        <image name="pete" width="125" height="159"/>
+        <image name="ray" width="135" height="170"/>
+    </resources>
+</document>
